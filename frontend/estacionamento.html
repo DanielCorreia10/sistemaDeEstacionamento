@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas Disponíveis</title>
+    <link rel="stylesheet" href="css/estacionamento.css">
+</head>
+
+<body>
+
+    <h2>Vagas Disponíveis</h2>
+
+    <!-- Filtro para exibir as vagas por tipo -->
+    <form id="filtroVagas">
+        <label for="tipoVaga">Filtrar por tipo de vaga:</label>
+        <select id="tipoVaga" name="tipoVaga">
+            <option value="">Selecione...</option>
+            <option value="Carro">Carro</option>
+            <option value="Moto">Moto</option>
+        </select>
+        <button type="submit">Filtrar</button>
+    </form>
+
+    <!-- Tabela de Vagas -->
+    <table>
+        <thead>
+            <tr>
+                <th>Vaga</th>
+                <th>Tipo</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Exemplo de vaga -->
+            <tr>
+                <td>1</td>
+                <td>Carro</td>
+                <td><span class="status-livre">Livre</span></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Moto</td>
+                <td><span class="status-ocupada">Ocupada</span></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Carro</td>
+                <td><span class="status-reservada">Reservada</span></td>
+            </tr>
+            <!-- Fim dos exemplos -->
+        </tbody>
+    </table>
+
+</body>
+
+</html>

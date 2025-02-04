@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Estacionamento</title>
+    <link rel="stylesheet" href="./css/registros.css">
+</head>
+
+<body>
+    <h2>Relatório de Estacionamento</h2>
+
+<!-- Filtro de Mês -->
+<form id="filtroRelatorio">
+    <label for="mes">Selecione o mês:</label>
+    <input type="month" id="mes" name="mes">
+    <button type="submit">Filtrar</button>
+</form>
+
+<!-- Tabela de Registros -->
+<table>
+    <thead>
+        <tr>
+            <th>Placa</th>
+            <th>Modelo</th> <!-- Nova coluna para o modelo do veículo -->
+            <th>Data Entrada</th>
+            <th>Data Saída</th>
+            <th>Duração (Horas)</th>
+            <th>Valor</th>
+            <th>Forma de Pagamento</th>
+            <th>Vaga</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Os dados do relatório serão inseridos aqui -->
+        <!-- Exemplo de linha de dados -->
+        <tr>
+            <td>ABC1234</td>
+            <td>Fusca</td> <!-- Exemplo do modelo -->
+            <td>2025-02-01 08:00</td>
+            <td>2025-02-01 10:00</td>
+            <td>2.00</td>
+            <td>R$ 26,00</td>
+            <td>À Vista</td>
+            <td>1</td>
+        </tr>
+        <!-- Fim dos exemplos -->
+    </tbody>
+</table>
+
+</body>
+
+</html>
