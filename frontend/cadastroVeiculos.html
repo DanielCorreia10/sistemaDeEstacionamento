@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Veículos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Wallpark</div>
+        <div>
+        <a href="index.html">Início</a>
+        <a href="cadastroVeiculos.html">Veículos</a>
+        <a href="estacionamento.html">Vagas</a>
+        <a href="registros.html">Relatório</a>
+        <a href="login.html">Sair</a>
+        </div>
+    </nav>
+
+    <h2>Cadastro de Veículos</h2>
+    <form id="veiculoForm">
+        <label for="placa">Placa:</label>
+        <input type="text" id="placa" name="placa" required>
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" name="modelo" required>
+        <label for="cor">Cor:</label>
+        <input type="text" id="cor" name="cor" required>
+        <label for="ano">Ano:</label>
+        <input type="number" id="ano" name="ano" required>
+        <select id="porte" name="porte" required>
+            <option value="Pequeno">Pequeno</option>
+            <option value="Médio">Médio</option>
+            <option value="Grande">Grande</option>
+        </select>
+        <label for="tipo">Tipo do Veículo:</label>
+        <select id="tipo" name="tipo" required>
+            <option value="Carro">Carro</option>
+            <option value="Moto">Moto</option>
+        </select>
+        <button type="submit">Cadastrar Veículo</button>
+
+    </form>
+
+    <script src="js/veiculos.js"></script>
+
+</body>
+</html>

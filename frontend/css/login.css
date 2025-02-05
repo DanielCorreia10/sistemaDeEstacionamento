@@ -15,7 +15,6 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 20px;
-    gap: 50px;
 }
 
 h1 {
@@ -43,20 +42,24 @@ h2 {
 
 label {
     display: block;
+    text-align: left; /* Alinha os rótulos à esquerda */
     margin: 10px 0 5px;
     font-weight: bold;
 }
 
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Manter a largura total */
+    padding: 12px;
     margin: 5px 0 15px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
+    transition: border-color 0.3s ease;
 }
 
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="password"]:focus {
     border-color: #4caf50;
     outline: none;
 }
@@ -87,10 +90,12 @@ a {
     text-decoration: none;
     color: #4caf50;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #388e3c;
 }
 
 #mensagem {
@@ -102,6 +107,24 @@ a:hover {
 @media (max-width: 600px) {
     section {
         padding: 20px;
-        width: 100%;
+        width: 90%;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        padding: 10px;
     }
 }

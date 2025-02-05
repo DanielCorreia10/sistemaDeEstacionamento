@@ -2,35 +2,35 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sistema de Estacionamento</title>
-  <link rel="stylesheet" href="css/login.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Estacionamento</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
 
-  <h1>Estacionamento Wallpark</h1>
+    <h1>Estacionamento Wallpark</h1>
 
-  <section>
+    <section>
+        <h2>Login</h2>
 
-    <h2>Login</h2>
+        <form id="loginForm">
+            <label for="usuario">Email:</label>
+            <input type="text" id="usuario" placeholder="Digite seu email" required />
 
-    <form id="loginForm">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" placeholder="Digite sua senha" required />
 
-      <label for="usuario">Usuário:</label>
-      <input type="text" id="usuario" placeholder="Digite seu usuário" />
-      <label for="senha">Senha:</label>
-      <input type="text" id="senha" placeholder="Digite seu usuário" />
-      <button id="btnLogin">Entrar</button>
-    </form>
-    <span>Não possui cadastro?</span>
-    <a href="./cadastro.html">Cadastre-se</a>
-    <p id="mensagem"></p>
-    
-  </section>
+            <button type="submit">Entrar</button>
+        </form>
 
-  <script src="js/loginCadastro.js"></script>
+        <span>Não possui cadastro?</span>
+        <a href="./cadastro.html">Cadastre-se</a>
+        <p id="mensagem"></p>
+    </section>
+
+    <script src="js/loginCadastro.js"></script>
 </body>
 
 </html>

@@ -13,13 +13,15 @@
     <h2>Cadastre-se</h2>
 
     <form id="clienteForm">
+        <label for="inputUsuario">Nome:</label>
+        <input type="text" id="inputUsuario" placeholder="Digite seu nome" required>
 
-        <label for="nomeCliente">Nome:</label>
-        <input type="text" id="inputUsuario" placeholder="Digite seu nome:">
-        <label for="nomeCliente">Email:</label>
-        <input type="text" id="inputEmail" placeholder="Digite seu email:">
-        <label for="nomeCliente">CPF:</label>
-        <input type="text" id="inputCPF" placeholder="Digite seu CPF:">
+        <label for="inputEmail">Email:</label>
+        <input type="email" id="inputEmail" placeholder="Digite seu email" required>
+
+        <label for="inputCPF">CPF:</label>
+        <input type="text" id="inputCPF" placeholder="Digite seu CPF" required>
+
         <label for="dtNascimento">Data de Nascimento:</label>
         <div class="date-input">
             <select id="dia" name="dia" required>
@@ -55,6 +57,10 @@
                 </script>
             </select>
         </div>
+
+        <label for="inputSenha">Senha:</label>
+        <input type="password" id="inputSenha" placeholder="Digite sua senha" required>
+
         <button type="submit">Cadastrar</button>
     </form>
 
